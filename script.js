@@ -18,8 +18,8 @@ function createPassword() { ////////// CREATE PASSWORD SECTION //////////
 
     newDiv.className = "passwordDiv";
     newDiv.innerHTML = `
-    <div class="passwordLabel" style="width: 25%;">Password Name:</div>
-    <textarea maxlength="100" style="height: 70%; width: 25%; font-size: calc(1.3vw + 1.3vh);" id="passwordName" class="passwordInput"></textarea>
+    <div class="passwordLabel" style="width: 20%;">Password Name:</div>
+    <textarea maxlength="100" style="height: 80%; width: 20%; font-size: calc(1.3vw + 1.3vh);" id="passwordName" class="passwordInput"></textarea>
 
 
     <textarea maxlength="50" id="label1" class="passwordLabel">Password:</textarea>
@@ -36,7 +36,7 @@ function createPassword() { ////////// CREATE PASSWORD SECTION //////////
 
 
     <div class="passwordLabel" style="width: 25%;">Additional Notes:</div>
-    <textarea maxlength="500" style="height: 70%; width: 25%;" id="additionalNotes" class="passwordInput"></textarea>
+    <textarea maxlength="500" style="height: 80%; width: 25%;" id="additionalNotes" class="passwordInput"></textarea>
 
     <button onclick="showDeletePasswordDiv(this.parentElement)" class="passwordDeleteButton">DELETE</button>
     `;
