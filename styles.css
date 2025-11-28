@@ -87,7 +87,7 @@ body {
 
 
 .passwordLabel {
-    width: 15%;
+    width: 18%;
     height: 15%;
     margin-top: 0.5%;
 
@@ -103,7 +103,7 @@ body {
 
 
 .passwordInput {
-    width: 15%;
+    width: 18%;
     height: 30%;
 
     box-sizing: border-box;
@@ -221,4 +221,5 @@ body {
 
 .toolbarBoxElements:hover, .searchBoxInput:hover, .passwordInput:hover, .passwordDeleteButton:hover, .cancelDeletionButton:hover, .confirmDeletionButton:hover, .deletionInput:hover { /* Dim element when hovering over it */
     filter: brightness(0.8);
+
 }
