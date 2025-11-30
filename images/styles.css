@@ -1,0 +1,223 @@
+* {
+    font-family: "Arial Black", "sans-serif";
+    padding: calc(0.15vw + 0.15vh);
+    color: rgb(177, 195, 215);
+
+    background-size: 100% 100%;
+    background-position: center;
+    image-rendering: pixelated;
+
+    background-color: transparent;
+
+    border: none;
+}
+
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url(images/background.png);
+}
+
+
+
+
+.toolbarBoxElements {
+    width: 8%;
+    height: 10%;
+    margin: 1%;
+
+    box-sizing: border-box;
+
+    background-image: url(images/small_buttons/square.png);
+
+    font-size: calc(0.7vw + 0.7vh);
+    text-align: center;
+}
+
+
+.searchBoxInput {
+    flex: 1;
+    height: 10%;
+    margin: 1%;
+
+    box-sizing: border-box;
+
+    background-image: url(images/small_buttons/rectangle_long.png);
+
+    font-size: calc(1vw + 1vh);
+    text-align: center;
+}
+
+
+
+
+.passwordsDiv { /* Section */
+    width: 100%;
+    height: 82%;
+    margin: 1%;
+    margin-left: 0;
+
+    overflow: auto;
+
+    background-image: url(images/big_buttons/color2/long_rectangle.png);
+}
+
+
+
+
+.passwordDiv { /* Section */
+    flex: 1;
+    height: 35%;
+    margin: 1%;
+    padding: 1.5%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+    background-image: url(images/big_buttons/color3/long_rectangle.png);
+}
+
+
+.passwordLabel {
+    width: 15%;
+    height: 15%;
+
+    box-sizing: border-box;
+
+    background-image: url(images/small_buttons/rectangle_long.png);
+
+    font-size: calc(0.7vw + 0.7vh);
+    text-align: center;
+
+    resize: none;
+}
+
+
+.passwordInput {
+    width: 15%;
+    height: 32%;
+
+    box-sizing: border-box;
+
+    background-image: url(images/small_buttons/rectangle_long.png);
+
+    font-size: calc(0.6vw + 0.6vh);
+    text-align: center;
+
+    resize: none;
+}
+
+
+.passwordDeleteButton {
+    width: 8%;
+    height: 90%;
+    margin: 1%;
+    margin-right: 0;
+
+    box-sizing: border-box;
+
+    background-image: url(images/small_buttons/square.png);
+
+    font-size: calc(0.9vw + 0.9vh);
+    text-align: center;
+}
+
+
+
+
+.deletePasswordConfirmationDiv { /* Section */
+    display: none;
+
+    position: absolute;
+    transform: translate(50%, 50%);
+
+    width: 50vw;
+    height: 50vh;
+
+    box-sizing: border-box;
+
+    background-image: url(images/big_buttons/color3/rectangle.png);
+}
+
+
+.cancelDeletionButton {
+    width: 20%;
+    aspect-ratio: 1 / 1;
+
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-image: url(images/big_buttons/color1/square.png);
+
+    font-size: calc(1vw + 1vh);
+    text-align: center;
+}
+
+
+.confirmDeletionButton {
+    width: 20%;
+    aspect-ratio: 1 / 1;
+
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    background-image: url(images/big_buttons/color1/square.png);
+
+    font-size: calc(1vw + 1vh);
+    text-align: center;
+}
+
+
+.deletionLabel {
+    width: 75%;
+    height: 30%;
+    margin: 1%;
+    margin-bottom: 0;
+
+    box-sizing: border-box;
+    float: left;
+
+    background-image: url(images/big_buttons/color1/long_rectangle.png);
+
+    font-size: calc(1.3vw + 1.3vh);
+    text-align: center;
+}
+
+
+.deletionInput {
+    width: 75%;
+    height: 60%;
+    margin: 1%;
+    margin-top: 0;
+
+    box-sizing: border-box;
+    float: left;
+
+    background-image: url(images/big_buttons/color1/rectangle.png);
+
+    font-size: calc(1.2vw + 1.2vh);
+    text-align: center;
+
+    resize: none;
+
+    outline: none;
+}
+
+
+
+
+.toolbarBoxElements:hover, .searchBoxInput:hover, .passwordInput:hover, .passwordDeleteButton:hover, .cancelDeletionButton:hover, .confirmDeletionButton:hover, .deletionInput:hover { /* Dim element when hovering over it */
+    filter: brightness(0.8);
+}
